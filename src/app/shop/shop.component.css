@@ -1,0 +1,10 @@
+.card
+{
+display: flex;
+justify-content: space-between;
+}
+
+.card h4
+{
+color:#ff5e00;
+}

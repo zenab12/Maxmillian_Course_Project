@@ -1,0 +1,21 @@
+form
+{
+padding:5rem 2rem;
+display: flex;
+flex-direction: column;
+}
+
+form label
+{
+color:orangered
+}
+
+form input,textarea
+{
+border: 2px dashed orange;
+}
+
+.form-group div {
+  display: flex;
+gap: 1rem;
+}

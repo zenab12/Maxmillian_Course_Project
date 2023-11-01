@@ -1,0 +1,44 @@
+.container
+{
+width:100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.details
+{
+background-color: antiquewhite;
+margin:2rem auto;
+padding:1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:1rem
+}
+
+
+.details-card{
+width:400px;
+padding:1rem;
+border-radius: 1rem;
+background-color: aliceblue;
+}
+
+
+.details-card img
+{
+max-width: 100%;
+}
+
+.amount
+{
+color:orangered;
+font-size: 1.1rem;
+}
+
+.btn-center
+{
+margin: 20px auto;
+}

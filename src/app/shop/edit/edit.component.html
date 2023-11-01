@@ -1,0 +1,22 @@
+<section class="editShop">
+
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" value="" #title>
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" name="amount" value="" #amount>
+    </div>
+
+    <div class="form-controls">
+      <button class="success" type="submit"  (click)="addIngredient({title:title.value,amount:+amount.value},$event)">Add ✌️</button>
+      <button class="danger">Delete 🔪</button>
+      <button class="warning">Clear 🙆‍♀️</button>
+    </div>
+
+  </form>
+
+</section>

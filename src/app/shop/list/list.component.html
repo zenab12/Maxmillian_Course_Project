@@ -1,0 +1,11 @@
+<div class="cards">
+  <div *ngFor="let ingredient of ingredients" class="card">
+    <h3>{{ingredient.title}}</h3>
+    <h4>{{ingredient.amount}}</h4>
+  </div>
+  <!-- <a routerLink="/recipes"> go reciepes</a> -->
+</div>
+<section>
+  <h2> edit your shoplist</h2>
+  <app-edit></app-edit>
+</section>

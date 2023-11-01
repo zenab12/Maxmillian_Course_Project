@@ -1,0 +1,61 @@
+<!-- <section class="details">
+    <div class="container recipes">
+          <div class="details-card">
+              <div class="details-img">
+                  <img [src]="recipe.img" [alt]="recipe.title">
+              </div>
+
+              <div class="details-title">
+                  <h2>{{recipe.title}} </h2>
+              </div>
+
+              <div class="details-desc">
+                  <p> {{recipe.desc}} </p>
+              </div>
+
+              <dl class="details-ingredients">
+                <dt><h3>Ingredients</h3></dt>
+                <dd *ngFor="let ing of recipe.ingredients">{{ing.title}},<span class="amount">{{ing.amount}}</span></dd>
+              </dl>
+
+              <div class="form-controls">
+                <button class="success btn" (click)="addToShop(recipe.ingredients)">add to shop ✌️</button>
+                <button class="danger btn">edit reciepe 🤔</button>
+                <button class="warning btn">delete reciepe 🔪</button>
+              </div>
+
+          </div>
+    </div>
+</section> -->
+
+
+<section class="details">
+  <div class="container recipes">
+        <div class="details-card">
+            <div class="details-img">
+                <img [src]="activeRecipe.img" [alt]="activeRecipe.title">
+            </div>
+
+            <div class="details-title">
+                <h2>{{activeRecipe.title}} </h2>
+            </div>
+
+            <div class="details-desc">
+                <p> {{activeRecipe.desc}} </p>
+            </div>
+
+            <dl class="details-ingredients">
+              <dt><h3>Ingredients</h3></dt>
+              <dd *ngFor="let ing of activeRecipe.ingredients">{{ing.title}},<span class="amount">{{ing.amount}}</span></dd>
+            </dl>
+
+            <div class="form-controls">
+              <button class="success btn" (click)="addToShop(activeRecipe.ingredients)">add to shop ✌️</button>
+              <!-- <button class="danger btn"  (click)="editRecipe(activeRecipe)" >edit reciepe 🤔</button> -->
+              <button class="danger btn"><a [routerLink]="['edit']" [queryParams]="{editable:activeRecipe.title=='kabsa'?'1':'0'}">edit reciepe 🤔</a></button>
+              <button class="warning btn">delete reciepe 🔪</button>
+            </div>
+          </div>
+          <button class="btn btn-center" (click)="goHome()">go home</button>
+  </div>
+</section>

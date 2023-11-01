@@ -1,0 +1,9 @@
+<!-- <app-item *ngFor="let recipe of recipes" [recipeEl]="recipe"  (recipeEm)="onRecipe(recipe)"></app-item> -->
+<div style="display:flex;justify-content: space-around;align-items: center;margin: 1rem auto;">
+  <h2 style="margin: 0;">our receipes</h2>
+  <a class="btn"  style="width:150px;padding:.5rem;text-align:center;margin: 0;" [routerLink]="['new']">add new recipe</a>
+</div>
+
+<div class="cards">
+  <app-item *ngFor="let recipe of recipes" [recipeEl]="recipe"></app-item>
+</div>

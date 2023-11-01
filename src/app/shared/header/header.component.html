@@ -1,0 +1,15 @@
+<nav>
+    <a class="logo">ZienRecipes</a>
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+      <li><a routerLink="/recipes" routerLinkActive="active" (click)="onSelect('recipe')">receipes</a></li>
+      <li><a [routerLink]="['/shop']" routerLinkActive="active" (click)="onSelect('shop-list')">shop-list</a></li>
+      <li [style]="{position:'relative'}" appDropDown>
+      <button class="btn" [style]="{margin:0}">Manage</button>
+      <ul [style]="{display:'none','flex-direction':'column',background:'#fff',padding:'10px',position:'absolute',width:'100%'}">
+          <li>admin</li>
+          <li>user</li>
+      </ul>
+      </li>
+    </ul>
+</nav>

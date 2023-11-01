@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+*
+{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+section
+{
+background-color: rgb(246, 243, 239);
+padding: 2rem 0;
+}
+
+h2
+{
+color:#ff5e00;
+text-align: center;
+margin-bottom: 2rem;
+text-transform: capitalize;
+}
+
+.cards
+{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.cards .card
+{
+min-width: 300px;
+max-width: 340px;
+border-radius: 8px;
+background-color: #fff;
+padding: .7rem;
+}
+
+div.form-controls
+{
+width:100%;
+display: flex;
+justify-content: center;
+}
+
+.btn
+{
+background-color: #de4f23;
+color:#fff;
+border: none;
+padding: .3rem 2rem;
+font-size: 1rem;
+cursor: pointer;
+margin:1rem auto;
+width:160px;
+align-self: center;
+transition: all .5s linear;
+border-radius: 4px;
+}
+
+.success
+{
+background-color: #79d83a;
+color:#fff
+}
+
+.danger
+{
+background-color: #d83a3a;
+color:#fff
+}
+
+.warning
+{
+background-color: #fef245;
+color:#222;
+}
+
+form
+{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap:1rem
+}
+
+form div.form-group
+{
+min-width: 250px;
+max-width: 400px;
+display: flex;
+flex-direction: column;
+gap:.3rem
+}
+
+form div.form-group label
+{
+font-size: 1.1rem;
+}
+
+form div.form-group input
+{
+  border: none;
+  padding: .5rem;
+}
+
+
+button
+{
+width:150px;
+padding:.5rem;
+font-size: 1rem;
+outline: none;
+border: none;
+}

@@ -1,0 +1,6 @@
+<div class="card" highLighter="#abc">
+  <img [src]="recipeEl.img" [alt]="recipeEl.title">
+  <h4>{{recipeEl.title}}</h4>
+  <p>{{recipeEl.desc}}</p>
+  <button  class="btn" (click)="sendRecipe(recipeEl)"><a [routerLink]="['/recipes',recipeEl.title]">details</a></button>
+</div>
